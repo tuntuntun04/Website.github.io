@@ -1,0 +1,406 @@
+:root {
+--pink-color: #F395C1;
+--baby-pink: #FDE7F2;
+--whit-color: #FFFFFF;
+--grey-blue-color: #50555C;
+}
+
+*,
+*::after,
+*::before{
+    box-sizing: border-box;
+}
+
+
+
+*{
+    margin:0; padding:0;
+    box-sizing: border-box;
+    outline: none; border: none;
+    text-decoration: none;
+    text-transform : capitalize;
+    transition: all .2s linear;
+    line-height: 1.5;
+
+    color: rgba(0, 0, 0, 0.75);
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 16px;
+    letter-spacing: 3 px;
+    word-wrap: break-word
+}
+
+html{
+    font-size: 65%;  
+    overflow-x: hidden;
+    scroll-behavior: smooth;
+
+}
+
+body{
+background-color:#FFFFFF ;
+padding-left: 30rem;
+
+}
+
+/*
+section{
+padding: 0rem;
+}
+
+*/
+
+
+
+header{
+    position: fixed;
+    top: 0% ;left: 0; bottom: 0;
+    background-color: #FFFFFF;
+    display: flex;
+    align-items:center ;
+    justify-content: space-between;
+    z-index: 1000;
+    flex-flow: column;
+    padding: 8rem 2rem;
+    width: 30rem;
+
+} 
+
+header .logo{
+    text-transform: uppercase;
+    color: #50555C;
+    font-size: 3rem;
+    font-family: Abril Fatface;
+    font-weight: bolder;
+    text-align: center;
+}
+
+header .navbar a{
+    font-family: 'Arvo', sans-serif;
+    display: block;
+    font-size: 2rem;
+    color: #50555C;
+    margin: 2rem 0;
+    line-height: 1.6rem;
+ 
+    
+}
+
+/* 触碰效果 */
+header .navbar a:hover{
+letter-spacing: .2rem;
+color: #F395C1;
+}
+
+header .live-now a{
+    color: #F797C4;
+    font-size: 1.5rem;
+    font-family: Arvo;
+    font-weight: 400;
+    letter-spacing: 0.125rem;
+    text-align: center;
+}
+
+header .live-now a:hover{
+    font-size: 0.9rem;
+}
+
+#menu-bars{
+ position: fixed;
+ top: 1rem; right: 1rem;
+ z-index: 10000;
+ background:var(--pink-color);
+ color: #fff;
+ border-radius: .5rem;
+ padding: 1rem 1.5rem;
+font-size: 3rem;
+cursor:pointer;
+display: none;
+}
+
+
+/*media queries*/
+@media (max-width:991px){
+
+    html{
+        font-size: 55%;  
+    }
+    
+    body{ 
+        padding: 0;
+    }
+    
+    #menu-bars{
+        display: initial;
+    }
+    
+    header{
+        left: -120%;
+    } 
+
+    header .active{
+        left: 0%;
+    } 
+
+
+}
+
+
+
+
+
+/*     <!-- header section ends --> */
+
+
+/*?*/
+.home .image{
+    flex: 1 1 40rem;
+}
+/*?*/
+
+.home .image img{
+    width: 100%;
+}
+
+
+
+.title{
+    color: #50555C;
+    font-family: Abril Fatface;
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 43.2px; /* 120% */
+    padding: 5rem 5rem;
+}
+
+
+
+/* start of news-section */
+.news{
+    background-color: #fff5fa;
+}
+
+.Notice{
+    color: #50555C;
+    font-family: Abril Fatface;
+    font-size: 26px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 26px; /* 100% */
+}
+
+.date{
+    color:#F797C4;
+    font-family: Arvo;
+    font-size: 13.3px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 19.92px; /* 149.774% */
+}
+
+.info{
+    color: #50555C;
+    font-family: Arvo;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 24px; /* 150% */
+}
+
+
+.news1{
+display: flex;
+}
+.news1 .image{
+    margin-left: 100px;
+    margin-block-end: 100px;
+}
+
+.news1 .content{
+    margin-right: 100px;
+    margin-left: 20px;
+}
+
+.news1 .content h2{
+    margin-bottom: 20px;
+}
+
+.news1 .content .date{
+    margin-bottom: 20px;
+}
+
+.news2{
+    display: flex;
+    }
+    .news2 .image{
+        margin-left: 100px;
+        margin-block-end: 100px;
+    }
+    
+    .news2 .content{
+        margin-right: 100px;
+        margin-left: 20px;
+    }
+    
+    .news2 .content h2{
+        margin-bottom: 20px;
+    }
+    
+    .news2 .content .date{
+        margin-bottom: 20px;
+    }
+
+.news .content a{
+    line-height: 100px;
+    text-decoration: underline;
+}
+
+/* End of news-section */
+
+
+
+/* start of character-section */
+.About-MOMO{
+    background-color:#ffffff;
+}
+
+.About-MOMO .wrapper{
+
+display: flex;
+}
+
+.About-MOMO img{
+    width: 30vw;
+    margin-left: 100px;
+    margin-block-end: 100px;
+}
+
+
+.About-MOMO .content .setting{
+margin-left : 35px;
+}
+
+.About-MOMO .content .setting span{
+
+    color: #F797C4;
+    }
+
+.About-MOMO .content .TMI{
+    margin: 35px; 
+    }
+
+.About-MOMO h2{
+    color: #50555C;
+    font-family: Abril Fatface;
+    font-size: 30px;
+    line-height: 35px;
+}
+
+
+.About-MOMO li{
+    color: #50555C;
+    font-family: Arvo;
+    font-size: 14px;
+    line-height: 35px;
+}
+
+.About-MOMO p{
+    color: #50555C;
+    font-family: Arvo;
+    font-size: 16px;
+    line-height: 35px;
+}
+
+/* End of character-section */
+
+
+
+
+.sns-section{
+    padding: 0 5rem ;
+    background-color: #fff5fa;
+}
+
+.sns-section .twitt{
+    display: flex;
+}
+
+.sns-section .info{
+    margin-block: 20px;
+
+}
+
+
+.sns-section h2{
+    color: #50555C;
+    font-size: 16px;
+    font-family: Arvo;
+    font-weight: 700;
+    text-transform: uppercase;
+    line-height: 23.20px;
+    word-wrap: break-word
+}
+
+.sns-section .info p{
+    margin: 5px;
+    color: #50555C;
+    font-size: 16px;
+    font-family: Arvo;
+    font-weight: 400;
+    line-height: 25px;
+    text-transform: none;
+}
+
+.sns-section .info .retweeted{
+    display: flex;
+    }
+
+.sns-section .info .t1{
+    margin-top: 25px;
+
+}
+
+.sns-section .link{
+    color: #636972;
+    font-size: 1px;
+    font-family: Arvo;
+    font-weight: 400;
+    text-decoration: underline;
+    line-height: 5px;
+    text-transform:initial;
+
+}
+
+.sns-section .more{
+    color: #1BB0E6;
+    font-size: 14px;
+    font-family: Arvo;
+    font-weight: 400;
+    line-height: 50px;
+
+}
+
+
+
+
+
+/* End of sns-section */
+
+
+.footer{
+    padding: 0 4rem;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.footer .copyright{
+    color: #50555C;
+    font-size: 12.80px;
+    font-family: Arvo;
+    font-weight: 400;
+    line-height: 18.56px;
+    word-wrap: break-word
+}
